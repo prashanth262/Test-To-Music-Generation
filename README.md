@@ -1,10 +1,11 @@
-🎵 Audio Generation Using Generative AI (MUSICGEN)
-📘 Project Overview
+Audio Generation Using Generative AI (MUSICGEN)
+
+>> Project Overview
 
 Audio Generation Using Generative AI explores the use of deep learning for generating realistic, high-quality music from text and melody inputs.
 This project implements MUSICGEN, a single-stage Transformer-based model that eliminates multi-stage hierarchies and enables controllable text-to-music and melody-conditioned music generation.
 
-🎯 Objectives
+>> Objectives
 
 Build a simple yet controllable music generation model using Generative AI.
 
@@ -14,19 +15,19 @@ Incorporate text and melody conditioning for creative control.
 
 Evaluate the system using objective and human-based audio quality metrics.
 
-🧠 Key Features
+>> Key Features
 
-🎶 Text-to-Music Generation: Generates music from descriptive text prompts.
+--> Text-to-Music Generation: Generates music from descriptive text prompts.
 
-🎧 Melody Conditioning: Produces music that follows a given melody or tune.
+--> Melody Conditioning: Produces music that follows a given melody or tune.
 
-⚡ Single-Stage Transformer: Simplifies model design using token interleaving patterns.
+--> Single-Stage Transformer: Simplifies model design using token interleaving patterns.
 
-🔊 High-Quality Output: Generates realistic, coherent, and stereo audio at 32 kHz.
+--> High-Quality Output: Generates realistic, coherent, and stereo audio at 32 kHz.
 
-🧩 Evaluation Metrics: Uses Fréchet Audio Distance (FAD), KL Divergence, CLAP score, and Human Mean Opinion Score (MOS).
+--> Evaluation Metrics: Uses Fréchet Audio Distance (FAD), KL Divergence, CLAP score, and Human Mean Opinion Score (MOS).
 
-🧱 System Architecture
+--> System Architecture
 
 Audio Tokenization (EnCodec + RVQ)
 
@@ -46,7 +47,7 @@ Autoregressive Transformer Decoder
 
 Generates audio token sequences step-by-step based on conditioning input.
 
-⚙️ Technologies Used
+>> Technologies Used
 
 Python
 
@@ -58,13 +59,15 @@ Audio Processing (Librosa, EnCodec)
 
 NumPy, Matplotlib, Scipy
 
-📊 Evaluation
+>> Evaluation
+
 Metric	Description	Result
 FAD (↓)	Measures audio realism	3.4
 CLAP Score (↑)	Audio-text alignment	0.32
 Human Rating (↑)	Perceived quality	84.8 / 100
 Dataset	Licensed 20K-hour music dataset	—
-📈 Results Summary
+
+>> Results Summary
 
 MUSICGEN outperformed baselines such as Riffusion, Mousai, and MusicLM.
 
@@ -74,7 +77,7 @@ Demonstrated better text and melody adherence compared to prior multi-stage meth
 
 
 
-📚 References
+>> References
 
 Jade Copet et al., “Simple and Controllable Music Generation (MUSICGEN)”, NeurIPS 2023.
 
